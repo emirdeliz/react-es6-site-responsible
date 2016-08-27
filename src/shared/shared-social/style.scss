@@ -1,0 +1,41 @@
+@import '../../assets/scss/variables';
+
+.shared-social {
+    display: inline-flex;
+
+    img {
+        margin-left: 5px;
+        height: 25px;
+        padding: 5px;
+        cursor: pointer;
+        cursor: pointer;
+    }
+
+    img.gray {
+        border: solid 1px $gray-light;
+    }
+
+    img.white {
+        border: solid 1px $white;
+    }
+}
+
+.shared-social {
+    @media(max-width: 800px) {
+        padding-top: 15px;
+
+        img {
+            margin-left: 15px;
+            height: 40px;
+            padding: 5px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        img {
+            margin-left: 5px;
+            height: 25px;
+            padding: 5px;
+        }
+    }
+}

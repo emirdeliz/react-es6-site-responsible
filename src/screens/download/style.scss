@@ -1,0 +1,60 @@
+@import '../../assets/scss/variables';
+
+.download  {
+    .containerText {
+        text-align: center;
+
+        .title {
+            color: $black;
+            font-size: $font-large;
+            display: block;
+        }
+
+        .subTitle {
+            color: $gray;
+            font-size: $font-normal;
+        }
+    }
+
+    .containerEmail {
+        input {
+            border: none;
+            background-color: $gray-light;
+        }
+
+        .input-group-addon {
+            background-color: $green;
+        }
+    }
+}
+
+.download  {
+    @media (max-width: 800px) {
+        .container {
+            padding-top: 10px;
+
+            .containerEmail {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 800px) {
+        .container {
+            padding-top: 50px;
+
+            .containerEmail {
+                margin-top: 35px;
+
+                .input-group, input {
+                    height: 55px;
+                }
+
+                .glyphicon {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../assets/scss/variables';
+
+.header {
+    margin-bottom: 0;
+    background-color: transparent;
+    border-color: transparent;
+
+    .row {
+        a {
+            text-transform: uppercase;
+            font-size: $font-small;
+        }
+    }
+}
+
+.header {
+    @media (max-width: 800px) {
+        background-color: $bony-white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+
+        .navbar-right {
+            padding-bottom: 30px;
+            background-color: $bony-white;
+        }
+
+        .navbar-nav{
+            margin: 0 -15px;
+        }
+
+        .navbar-header {
+            background: url(../imgs/intro-bg.png) no-repeat center center;
+            background-size: cover;
+            height: 25vh;
+        }
+
+        .navbar-collapse {
+            border: none;
+        }
+
+        .col-sm-6 {
+            min-height: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .container {
+            height: 450px;
+            background: url(../imgs/intro-bg.png) no-repeat center center;
+            background-size: cover;
+
+            a {
+                color: $white !important;
+            }
+        }
+    }
+}

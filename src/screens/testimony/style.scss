@@ -1,0 +1,106 @@
+@import '../../assets/scss/variables';
+
+.testimony  {
+    .container {
+        .col-sm-12 {
+            padding: 0;
+        }
+    }
+
+    .carousel {
+        img {
+            width: 50%;
+        }
+
+        .carousel-caption {
+            left: 50%;
+
+            h3 {
+                justify-content: center;
+            }
+
+            h3, p {
+                text-align: left;
+                width: auto;
+            }
+        }
+
+        .carousel-inner {
+            background-color: $purple;
+        }
+    }
+}
+
+.testimony  {
+    @media (max-width: 800px) {
+        .carousel-indicators {
+            display: none;
+        }
+
+        .carousel-caption {
+            right: 3px;
+            padding: 0;
+            top: 0;
+
+            h3, p {
+                font-size: $font-small;
+                margin-top: 3px;
+            }
+
+            h3, p {
+                margin-left: 5px;
+            }
+        }
+
+        .carousel-inner {
+            height: auto;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    @media (min-width: 800px) {
+        .container {
+            padding-top: 50px;
+        }
+
+        .carousel-indicators {
+            left: 75%;
+            li {
+                background-color: $light-purple;
+                border: none;
+            }
+
+            li.active {
+                background-color: $white;
+                margin: 1px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .carousel-caption {
+            right: 10%;
+            top: 3%;
+
+            p {
+                text-transform: uppercase;
+                font-size: $font-normal;
+            }
+
+            h3 {
+                font-size: $font-large;
+            }
+
+            h3, p {
+                padding-left: 10%;
+            }
+        }
+
+        .carousel-inner {
+            height: 40vh;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../assets/scss/variables';
+
+.benefits {
+    text-align: center;
+
+    .container {
+        padding-bottom: 50px;
+    }
+
+    .row {
+        padding-top: 35px;
+    }
+
+    .clean-code, .easily-customised, .responsive-ready,
+    .modern-design, .ready-to-ship, .download-for-free {
+        height: $icon-normal;
+        margin-bottom: 20px;
+    }
+}
+
+.benefits {
+    @media (max-width: 800px) {
+        margin-top: 20vh;
+    }
+}

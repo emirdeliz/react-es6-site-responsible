@@ -1,0 +1,46 @@
+@import '../../assets/scss/variables';
+
+.card-employee {
+    .name {
+        font-weight: bold;
+        font-size: $font-normal;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .localization {
+        text-transform: uppercase;
+        font-size: $font-small;
+        color: $dark-red;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .testimony {
+        font-size: $font-small;
+        color: $light-white;
+        margin-top: 20px;
+        padding-right: 3px;
+    }
+
+    > img {
+        height: 160px;
+        width: 160px;
+    }
+}
+
+.card-employee {
+    @media (max-width: 800px) {
+        padding: 15px;
+
+        .testimony {
+            height: 40px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .testimony {
+            height: 95px;
+        }
+    }
+}

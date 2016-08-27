@@ -1,0 +1,44 @@
+@import 'variables';
+
+@font-face {
+    font-family: "proximanova-regular";
+    src: url(../webfonts/proximanova-regular.woff);
+}
+
+@font-face {
+    font-family: "proximanovacond-regular";
+    src: url(../webfonts/proximanovacond-regular.woff);
+}
+
+html, * {
+    font-family: proximanova-regular;
+}
+
+body {
+    background-color: #dedede;
+}
+
+.container {
+    background-color: $white;
+}
+
+.glyphicon {
+    font-family: 'Glyphicons Halflings' !important;
+    color: $white;
+}
+
+/* Screens */
+@import '../../screens/home/style.scss';
+@import '../../screens/header/style.scss';
+@import '../../screens/benefits/style.scss';
+@import '../../screens/features/style.scss';
+@import '../../screens/our-team/style.scss';
+@import '../../screens/testimony/style.scss';
+@import '../../screens/download/style.scss';
+@import '../../screens/footer/style.scss';
+
+/* Shared */
+@import '../../shared/card-benefits/style.scss';
+@import '../../shared/card-employee/style.scss';
+@import '../../shared/image-filter/style.scss';
+@import '../../shared/shared-social/style.scss';

@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables';
+
+.benefits {
+    text-align: center;
+    margin-top: 15px;
+
+    .clean-code {
+        content: url(../imgs/clean-code.png)
+    }
+
+    .easily-customised {
+        content: url(../imgs/easily-customised.png)
+    }
+
+    .responsive-ready {
+        content: url(../imgs/responsive-ready.png)
+    }
+
+    .modern-design {
+        content: url(../imgs/modern-design.png)
+    }
+
+    .ready-to-ship {
+        content: url(../imgs/ready-to-ship.png)
+    }
+
+    .download-for-free {
+        content: url(../imgs/download-for-free.png)
+    }
+}
+
+@media(max-width: 760px) {
+    .benefits {
+
+    }
+}

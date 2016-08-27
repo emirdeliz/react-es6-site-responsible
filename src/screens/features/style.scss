@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+.features {
+    text-align: center;
+
+    .row {
+        margin: 0;
+    }
+
+    .col-sm-3, .container {
+        padding: 0;
+    }
+}
